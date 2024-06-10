@@ -2,10 +2,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: Fushilaofang
+      url-base: https://github.com/Fushilaofang
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-  self: 
-     path: config
+    - name: ZMK_DISPLAY_FULL_REFRESH_PERIOD
+      remote: Fushilaofang
+      revision: main
+  self:
+    path: config
